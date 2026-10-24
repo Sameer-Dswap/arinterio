@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<title>lala friend demo</title>
+<title>Arinterio</title>
+<meta name="description" content="Arinterio is an interior design studio. Browse completed projects, the way we work, and get in touch.">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -247,6 +248,8 @@ cite{font:500 .72rem/1.5 var(--f-mono);letter-spacing:.07em;text-transform:upper
 .mini .acts{display:flex;gap:.4rem;flex:none}
 .st{font:500 .76rem/1.5 var(--f-mono);color:var(--mute);margin:.7rem 0 0;min-height:1.2rem}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* public build: viewing only, no editor or sample banner */
+#note,#edit-open,#ov-e{display:none!important}
 </style>
 <div id="note" class="note"><div class="wrap"><span>Sample site. Tap "Edit site" to add your projects, photos and details.</span><button type="button" id="note-x">Dismiss</button></div></div>
 
@@ -516,7 +519,7 @@ var SAMPLE=[
  {id:'s7',title:'Maple Apartment',type:'Residential',city:'Chennai',year:2023,area:1450,scope:'Renovation',pal:1,v:0,blurb:'A compact two-bedroom renovated for storage and daylight, with built-in seating at every window.'}
 ];
 var DEF={
- name:'Your Studio',designer:'Your Name',
+ name:'Arinterio',designer:'Your Name',
  tagline:'Rooms drawn to the millimetre, finished by hand.',
  est:2012,email:'name@example.com',website:'arinterio.com',phone:'+00 00000 00000',address:'Studio address, City',
  bio:'Write two or three sentences about the studio here: where you trained, the kinds of homes and workplaces you take on, and how you like to work with clients.',
@@ -868,5 +871,6 @@ $('#reset-all').addEventListener('click',function(){
 renderAll();
 })();
 </script>
+
 </body>
 </html>
